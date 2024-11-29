@@ -1,2 +1,8 @@
-# Create a program that will accept a word from a user and return the length of that word. 
-# Make this program in a loop with option to exit when the use types in quit.
+# Read input from the user
+user_input = input("Enter something: ")
+
+# Count only the letters (ignoring numbers, spaces, and special characters)
+letter_count = sum(1 for char in user_input if char.isalpha())
+
+# Output the result
+print(f"There are {letter_count} letters in your input.")
